@@ -1,0 +1,74 @@
+/*
+Theme Name: Convertica
+Theme URI: http://creatikathemes.com
+Author: Shivanand Sharma
+Author URI: https://creatikathemes.com
+Description: Built to power business sites that allow 1) Greater Control through settings, 2) Allows cutting-edge SEO 3) Is built for sales and conversion (and of course WooCommerce ready)
+Version: 0.32
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Documentation URI: http://www.creatikathemes.com
+Support URI: http://www.creatikathemes.com
+Tags: white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-header, custom-menu, full-width-template, microformats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, featured-images, editor-style
+Text Domain: convertica
+
+This theme is licensed under the GNU GPL 2 licence or later.
+Use it to power your business site, rebrand, hack, reshare without our permission. If things break don't blame us. If you create awesomeness, do not forget to tell us about it.
+
+******** LICENSE **********
+Copyright (c) 2015 Shivanand Sharma, Binary Turf Web Technologies Pvt. Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+ADDITIONAL LIBRARIES
+	Convertica uses some additional libraries in order to enhance the theme experience and usability. Here are the details and the licenses of the same.
+	A big thanks to Justin Tadlock for Hybrid Core! Hybrid Core is the heart of Convertica and Convertica wouldn't be possible without it. Hybrid Core is GPLv2.
+	Twitter Bootstrap: Uses MIT license and is 100% GPL compatible.
+	Mobile Detect: Uses MIT license and is 100% GPL compatible.
+*/
+
+/*
+$0.32
+	» Added the flexibility to allow developers to override the template_directory and template_directory_uri constants so as to allow flexibility of creating a parent theme out of convertica.
+	» Updated the value for constants that define Hybrid core path for inclusion later, so as to be able to be used in case when a parent theme is being developed with convertica as a drop-in library.
+$0.31
+	» Fixed jQuery issue caused by 'chosen' script which was being enqueued on all admin pages instead of being enqueued only on the theme settings page.
+	» Fixed the PHP strict standards error which would generate if a user tries to import settings by uploading a file with unsupported format or would not upload a file at all.
+$0.30
+	» Convertica settings now have validation / sanitization in place to make sure that the valid data is saved to database.
+	» Landing sections content is now saved into database with the html entities encoded.
+	@ TO-DOs @
+		=> Reset settings should show a confirmation dialog before reset.
+$0.29
+	» Added Import / Export page under Appearance menu to allow users to export and import the theme settings. Import / Export feature is available via 'convertica-import-export' theme support.
+$0.28
+	--- # Development taken over by Aniket. # ---
+	» Refactored theme admin page build. The theme settings are now registered on 'admin_init' which is more suitable than using admin_menu being used previously.
+	» Added Reset Settings button to settings page to allow users to revert the settings to defaults.
+	» Added theme support declaration 'convertica-settings-page' to allow admin page to be added only if the theme supports it.
+	» Added filter 'convertica_settings_defaults' to allow users / devs to filter the default settings for the theme.
+	» Reorganized the file structure to organize all admin functions into '../dev/convertica/admin' directory.
+	» Added a body class to settings page that will be equal to the slug of the settings page.
+	» Added a check to skip declaring 'Mobile_Detect' class if it aleady exists.
+	» Added 'scripts()' and 'styles()' methods to available on all admin pages that are created by extending the 'Convertica_Settings_Base' class so that custom scripts and styles enqueued to that specific page.
+	» Relocated the 'chosen' scripts library to be available in the '../dev/edge/scripts/chosen' directory so as to better organize the scripts location directory. Initially, it was located under the '../dev/edge/fonts/' directory.
+	» Moved the convertica_get_prefix() function from '../dev/convertica/hc-functions.php' to '../dev/convertica/functions.php' since it was the only function that existed in that file; all other theme functions were declared in the latter file.
+$0.24
+	Merged after Femme Flora WP improvements
+$0.22
+	Implemented settings framework
+$0.11
+	Implemented custom-style.scss and custom-functions.scss
+$0.8
+	Implemented all design settings
+$0.5
+	Building Responsive
+$0.4
+	Settings are working right.
+*/
+/* @import url("css/style.css") */

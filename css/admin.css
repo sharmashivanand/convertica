@@ -1,0 +1,109 @@
+#adminmenu .toplevel_page_convertica .wp-menu-image {
+	background-image: url(../images/convertica-logo.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#adminmenu .toplevel_page_convertica .wp-menu-image img {
+	display: none;
+}
+
+.wrap div.error,
+.wrap div.updated {
+	clear: both;
+}
+
+/* Convertica landing sections */
+
+.landing-section-stuff {
+	background-color: #eee;
+	padding: 0.618em 1.2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border: 1px solid #ccc;
+}
+.landing-section-stuff .section-title {
+	margin-bottom: 1em;
+}
+
+.landing-section-stuff .section-title input {
+	font-size: 1.2em;
+	outline: 0 none;
+    padding: 10px;
+    width: 100%;
+	margin-top: 5px;
+}
+
+table.convertica-settings-table {
+	width: 60%;	
+}
+
+table.convertica-settings-table td {
+	width: 50%;
+}
+
+.landing-section-id-classes input.section-classes {
+	width: 95%;
+	height: 24px;
+}
+
+/* Settings Page styles */
+
+.csbox-label {
+	padding-right:2em;
+	min-width:200px;
+}
+
+.csbox-label label {
+	display: block;
+}
+
+.hybrid-core-settings-wrap .button {
+	margin-right: 10px;	
+}
+
+.hybrid-core-settings-wrap .postbox-container table {
+	width: 75%;	
+}
+
+.hybrid-core-settings-wrap .postbox-container td {
+	min-width: 45%;
+}
+
+input.convertica-gfonts-key {
+	width: 75%;
+	padding: 6px 8px;	
+}
+
+input.convertica-gfonts-key.validating {
+	background-image: url(three-dots.svg);
+    background-size: 5%;
+    background-position: 98% center;
+    background-repeat: no-repeat;
+}
+
+input.convertica-gfonts-key.validated.valid {
+	border-color: #1abc9c;
+	background-image: none;
+}
+
+input.convertica-gfonts-key.validated.invalid {
+	border-color: #e74c3c;
+	background-image: none;
+}
+
+input.convertica-gfonts-key.empty {
+	border-color: #f1c40f;
+	background-image: none;
+}
+
+#normal-sortables #convertica-import-export-box {
+	margin-bottom: 0;
+}
+
+#normal-sortables #convertica-import-export-box p.submit {
+	float: none;
+	margin: 15px 0;
+	padding: 0;
+}

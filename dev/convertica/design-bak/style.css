@@ -1,0 +1,297 @@
+/** For those times when you don't need a full-blown child-theme. This is SASSified so style smart! */
+/* Removing widget areas to hide default widgets - remove this code if widget areas are to be used by the design */
+.sidebar-before_header, .sidebar-after_header, .sidebar-before_footer {
+  display: none;
+}
+/* Color Variables */
+/* Generic Styles */
+body {
+  line-height: 1.8em;
+}
+p {
+  margin-bottom: 1.618em;
+}
+.entry-content a {
+  text-decoration: underline;
+}
+a, a:hover, input, input:focus {
+  transition: all 0.15s ease-in-out 0.15s;
+}
+/* Nav menu before header */
+#menu-before_header {
+  border-bottom: 1px dotted #42a67c;
+  bbackground-color: #42a67c;
+  text-align: center;
+}
+#menu-before_header .wrap {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#menu-before_header li {
+  float: none;
+  display: inline-block;
+}
+#menu-before_header li a {
+  padding: 0.8em 1.2em;
+}
+#menu-before_header li:first-child a {
+  padding-left: 0;
+}
+/* Header and Logo */
+.site-header {
+  border-bottom: 3px solid #42a67c;
+  /*
+   .site-title a {
+   background: rgba(0, 0, 0, 0) url(images/creatika-logo-v8.png) no-repeat scroll left top / 160px 130px;
+   display: block;
+   height: 130px;
+   padding-left: 180px;
+   padding-top: 40px;
+   text-transform: none;
+   }
+   #site-description {
+   padding-left: 180px;
+   margin-top: -50px;
+   }*/
+}
+.site-header .wrap {
+  background-color: transparent;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.site-header .site-title a {
+  background: rgba(0, 0, 0, 0) url(images/creatika-logo-v9.png) no-repeat scroll left top / 120px 120px;
+  display: block;
+  height: 120px;
+  padding-left: 145px;
+  padding-top: 28px;
+  text-transform: none;
+}
+.site-header #site-description {
+  padding-left: 145px;
+  margin-top: -25px;
+  margin-top: -52px;
+}
+.site-header #branding {
+  height: 120px;
+  display: table;
+  margin: 0 auto;
+}
+.main .wrap {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+body.convertica .entry-title a:hover {
+  color: #42a67c;
+}
+#footer {
+  background-color: #2d3034;
+}
+#footer .wrap {
+  background-color: transparent;
+  border: none;
+}
+#footer a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+#footer a:hover {
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+}
+.highlight {
+  color: #42a67c;
+  padding: 0.618em 1.618em 1em;
+  font-size: 2.168em;
+  line-height: 1.2em;
+  line-height: 1.48em;
+  font-family: "Times New Roman", sans-serif;
+  font-style: italic;
+  background-color: #f4f4f4;
+  margin-bottom: 1em;
+}
+a.inline-twitter-link {
+  color: #42a67c;
+  padding: 0.618em 1.618em 1em;
+  display: block;
+  font-size: 2.168em;
+  line-height: 1.2em;
+  line-height: 1.48em;
+  font-family: "Times New Roman", sans-serif;
+  font-style: italic;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin-bottom: 1em;
+}
+a.inline-twitter-link:hover {
+  color: #ed6d62;
+  background-color: #f4f4f4;
+}
+p.note {
+  background-color: #42a67c;
+  color: #fff;
+  padding: 1.2em;
+}
+p.note a {
+  color: #fff;
+  text-decoration: underline;
+}
+.singular-page-92 .wpcf7 input, .singular-page-92 .wpcf7 textarea, .singular-page-92 .wpcf7 select {
+  width: 100%;
+  padding: 0.618em;
+}
+.singular-page-92 .wpcf7 input:focus {
+  border-color: #42a67c;
+}
+.singular-page-92 .wpcf7 input[type="button"], .singular-page-92 .wpcf7 input[type="submit"], .singular-page-92 .wpcf7 input[type="reset"], .singular-page-92 .wpcf7 button {
+  width: auto;
+  padding: 0.618em 2.618em;
+}
+input[type="button"], input[type="submit"], input[type="reset"], button {
+  background-image: none;
+  background-color: #42a67c;
+  color: #fff;
+  font-variant: normal;
+  font-size: 1.2em;
+  padding: 0.618em 2.618em;
+  border-color: #fff;
+}
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+  background-color: #3b946e;
+}
+.req {
+  padding-left: 3px;
+  color: #42a67c;
+}
+pre, code {
+  font-size: 0.8em;
+}
+pre code {
+  font-size: 1em;
+}
+body.convertica .entry-byline {
+  font-variant: small-caps;
+}
+.entry-content .drop_cap, .landing-section .drop_cap {
+  color: #909090;
+  float: left;
+  font-size: 3.5em;
+  line-height: 0.76em;
+  padding: 0.08em 0.12em 0 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.cc-read-more {
+  border-bottom: 1px dotted #42a67c;
+}
+.cc-read-more:hover {
+  color: #808080;
+  border-color: #808080;
+}
+#footer .cc-sm a {
+  border-bottom: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+#footer .cc-sm a.cc-twitter:hover {
+  color: #55acee;
+}
+#footer .cc-sm a.cc-fb:hover {
+  color: #42a67c;
+}
+#footer .cc-sm .dashicons, #footer .cc-sm .dashicons-before::before {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+/* SM Icons in menu */
+#menu-before_header .dashicons, #menu-before_header .dashicons-before::before {
+  vertical-align: middle;
+  line-height: 0.9;
+}
+/* Animated Search Icon */
+#menu-before_header {
+  /* Clear search field placeholder text on focus */
+}
+#menu-before_header .menu > .search {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: 0;
+}
+#menu-before_header li a.icon-search:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  content: '\f002';
+  font-size: 15px;
+}
+#menu-before_header li a.icon-search {
+  cursor: pointer;
+}
+#menu-before_header .search-div {
+  display: none;
+  position: absolute;
+  right: -40px;
+  width: 295px;
+  padding-top: 8px;
+}
+#menu-before_header .search-div .search-form {
+  position: relative;
+}
+#menu-before_header .search-div .search-form input[type="search"] {
+  border-radius: 20px;
+  width: 80%;
+  border-color: #ccc;
+}
+#menu-before_header .search-submit {
+  display: none;
+}
+#menu-before_header input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+#menu-before_header input:focus:-moz-placeholder {
+  color: transparent;
+}
+#menu-before_header input:focus::-moz-placeholder {
+  color: transparent;
+}
+#menu-before_header input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* After Entry Widget */
+.sidebar-after_entry {
+  background-color: rgba(45, 48, 52, 0.9);
+  padding: 2em 1.618em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2.618em;
+}
+.sidebar-after_entry .widget-title {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.sidebar-after_entry a.button {
+  color: #fff;
+  background-color: #42a67c;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.618em 1.618em;
+  font-weight: bold;
+}
+.sidebar-after_entry a.button:hover {
+  background-color: #3b946e;
+}
+/* Pagination */
+.pagination {
+  margin-top: 3.5em;
+}
+.pagination .current, .pagination .page-numbers:hover {
+  background-color: #42a67c;
+}

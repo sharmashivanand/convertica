@@ -1,0 +1,408 @@
+/** For those times when you don't need a full-blown child-theme. This is SASSified so style smart! */
+
+/* Removing widget areas to hide default widgets - remove this code if widget areas are to be used by the design */
+
+.sidebar-before_header,
+.sidebar-after_header,
+.sidebar-before_footer {
+	display: none;
+}
+
+/* Color Variables */
+
+$primary_color: #44A564;
+$primary_color: #42a67c;
+$sec_color: #2d3034;
+$hover_color: #ed6d62;
+
+
+/* Generic Styles */
+
+body {
+	line-height: 1.8em;
+}
+
+p {
+	margin-bottom: 1.618em;
+}
+
+.entry-content a {
+	text-decoration: underline;
+}
+
+a,
+a:hover,
+input,
+input:focus {
+	transition: all 0.15s ease-in-out 0.15s;
+} 
+
+
+/* Nav menu before header */
+
+#menu-before_header {
+	border-bottom: 1px dotted $primary_color;
+	bbackground-color: $primary_color;
+	
+	text-align: center;
+	
+	.wrap {
+		background-color: transparent;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	li {
+		float: none;
+		display: inline-block;
+	}
+	
+	li a {
+		padding: 0.8em 1.2em;
+	}
+	
+	li:first-child a {
+		padding-left: 0;
+	}
+	
+}
+
+/* Header and Logo */
+
+.site-header {
+	border-bottom: 3px solid $primary_color;
+	
+	.wrap {
+		background-color: transparent;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	
+	.site-title a {
+		background: rgba(0, 0, 0, 0) url(images/creatika-logo-v9.png) no-repeat scroll left top / 120px 120px;
+		display: block;
+		height: 120px;
+		padding-left: 145px;
+		padding-top: 28px;
+		text-transform: none;
+	}
+	
+	#site-description {
+		padding-left: 145px;
+		margin-top: -25px;
+		margin-top: -52px;
+	}
+	
+	#branding {
+		height: 120px;
+		display: table;
+		margin: 0 auto;
+	}
+	/*
+	.site-title a {
+		background: rgba(0, 0, 0, 0) url(images/creatika-logo-v8.png) no-repeat scroll left top / 160px 130px;
+		display: block;
+		height: 130px;
+		padding-left: 180px;
+		padding-top: 40px;
+		text-transform: none;
+	}
+	
+	#site-description {
+		padding-left: 180px;
+		margin-top: -50px;
+	}*/
+}
+
+.main {
+	.wrap {
+		padding-top: 60px;
+		padding-bottom: 75px;
+	}
+}
+
+
+body.convertica .entry-title a:hover {
+	color: $primary_color;
+}
+
+#footer {
+	background-color: $sec_color;
+	
+	.wrap {
+		background-color: transparent;
+		border: none;
+	}
+	
+	a {
+		color: #fff;
+		border-bottom: 1px dotted #fff;
+	}
+	
+	a:hover {
+		color: #c4c4c4;
+		border-color:  #c4c4c4;
+	}
+}
+
+.highlight {
+	color: $primary_color;
+	padding: 0.618em 1.618em 1em;
+	font-size: 2.168em;
+	line-height: 1.2em;
+	line-height: 1.48em;
+	font-family: "Times New Roman", sans-serif;
+	font-style: italic;
+	background-color: #f4f4f4;
+	margin-bottom: 1em;
+}
+
+a.inline-twitter-link {
+	color: $primary_color;
+	padding: 0.618em 1.618em 1em;
+	display: block;
+	font-size: 2.168em;
+	line-height: 1.2em;
+	line-height: 1.48em;
+	font-family: "Times New Roman", sans-serif;
+	font-style: italic;
+	text-align: center;
+	background-color: #f4f4f4;
+	margin-bottom: 1em;
+}
+
+a.inline-twitter-link:hover {
+	color: #ed6d62;
+	background-color: #f4f4f4;
+}
+
+p.note {
+	background-color: $primary_color;
+	color: #fff;
+	padding: 1.2em;
+	
+	a {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+.singular-page-92 {
+	.wpcf7 {
+		input, textarea, select {
+			width: 100%;
+			padding: 0.618em;
+		}
+		
+		input:focus {
+			border-color: $primary_color;
+		}
+		
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		button {
+			width: auto;
+			padding: 0.618em 2.618em; 
+		}
+	}
+}
+
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+	background-image: none;
+	background-color: $primary_color;
+	color: #fff;
+	font-variant: normal;
+	font-size: 1.2em;
+	padding: 0.618em 2.618em; 
+	border-color: #fff;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+	background-color: darken($primary_color, 5%);
+}
+
+.req {
+	padding-left: 3px;
+	color: $primary_color;
+}
+
+pre,
+code {
+	font-size: 0.8em;
+}
+
+pre code {
+		font-size: 1em;
+}
+
+body.convertica .entry-byline {
+	font-variant: small-caps;
+}
+
+.entry-content .drop_cap,
+.landing-section .drop_cap {
+	color: #909090;
+	float: left;
+	font-size: 3.5em;
+	line-height: 0.76em;
+	padding: 0.08em 0.12em 0 0;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.cc-read-more {
+	border-bottom: 1px dotted $primary_color;
+}
+
+.cc-read-more:hover {
+	color: #808080;
+	border-color: #808080;
+}
+
+#footer .cc-sm {
+	a {
+		border-bottom: none;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 50px;
+	}
+	
+	a.cc-twitter:hover {
+		color: #55acee;
+	}
+	
+	a.cc-fb:hover {
+		color: $primary_color;
+	}
+	
+	.dashicons,
+	.dashicons-before::before {
+		font-size: 50px;
+		height: 50px;
+		width: 50px;
+	}
+}
+
+/* SM Icons in menu */
+
+#menu-before_header {
+	.dashicons,
+	.dashicons-before::before {
+		vertical-align: middle;
+		line-height: 0.9;
+	}
+}
+
+/* Animated Search Icon */
+
+#menu-before_header {
+
+	.menu > .search {
+		display: inline-block;
+		position: relative;
+		width: auto;
+		padding: 0;
+	}
+
+	li a.icon-search:before {
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: none;
+		content: '\f002';
+		font-size: 15px;
+	}
+
+	li a.icon-search {
+		cursor: pointer;
+	}
+
+	.search-div {
+		display: none;
+		position: absolute;
+		right: -40px;
+		width: 295px;
+		padding-top: 8px;
+	}
+
+	.search-div .search-form {
+		position: relative;
+	}
+
+	.search-div .search-form input[type="search"] {
+		border-radius: 20px;
+		width: 80%;
+		border-color: #ccc;
+	}
+	
+	.search-submit {
+		display: none;
+	}
+	
+	/* Clear search field placeholder text on focus */
+
+	input:focus::-webkit-input-placeholder {
+		color: transparent;
+	}
+	input:focus:-moz-placeholder {
+		color: transparent;
+	}
+
+	input:focus::-moz-placeholder {
+		color: transparent;
+	}
+
+	input:focus:-ms-input-placeholder {
+		color: transparent;
+	}
+}
+
+/* After Entry Widget */
+
+.sidebar-after_entry {
+	background-color: transparentize($sec_color, 10%);
+	padding: 2em 1.618em;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 2.618em;
+	
+	.widget-title {
+		color: #fff;
+		font-size: 26px;
+		margin-bottom: 1em;
+		text-transform: capitalize;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	
+	a.button {
+		color: #fff;
+		background-color: $primary_color;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.618em 1.618em;
+		font-weight: bold;
+	}
+	
+	a.button:hover {
+		background-color: darken($primary_color, 5%);
+	}
+}
+
+/* Pagination */
+
+.pagination {
+	margin-top: 3.5em;
+}
+
+.pagination .current,
+.pagination .page-numbers:hover {
+	background-color: $primary_color;
+}

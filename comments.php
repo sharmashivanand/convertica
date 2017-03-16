@@ -1,0 +1,3 @@
+<?php
+
+convertica_comments();
